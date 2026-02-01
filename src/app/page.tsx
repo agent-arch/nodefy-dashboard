@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 interface Project {
   name: string;
@@ -53,6 +54,13 @@ export default function Dashboard() {
   const [sessions, setSessions] = useState<Session[]>([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState<'all' | 'projects' | 'config'>('all');
+  const router = useRouter();
+
+  async function handleLogout() {
+    await fetch('/api/auth', { method: 'DELETE' });
+    router.push('/login');
+    router.refresh();
+  }
 
   useEffect(() => {
     async function fetchData() {
@@ -110,6 +118,12 @@ export default function Dashboard() {
                 <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                 <span className="text-zinc-400">Live</span>
               </div>
+              <button
+                onClick={handleLogout}
+                className="px-3 py-1.5 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800 rounded-lg transition-colors"
+              >
+                Uitloggen
+              </button>
             </div>
           </div>
         </div>
