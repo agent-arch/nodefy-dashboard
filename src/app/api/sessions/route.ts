@@ -1,47 +1,47 @@
 import { NextResponse } from 'next/server';
+import fs from 'fs';
+import path from 'path';
 
 export const dynamic = 'force-dynamic';
 
-interface Session {
-  key: string;
-  kind: string;
-  channel: string;
-  displayName?: string;
-  model?: string;
-  totalTokens?: number;
-  updatedAt: number;
-  sessionId: string;
-}
-
-const MOLTBOT_URL = process.env.MOLTBOT_URL || 'http://localhost:8024';
-const MOLTBOT_TOKEN = process.env.MOLTBOT_TOKEN || '';
-
 export async function GET() {
-  try {
-    // Try to fetch from Moltbot API if available
-    if (MOLTBOT_TOKEN) {
-      const res = await fetch(`${MOLTBOT_URL}/api/sessions?limit=50&messageLimit=0`, {
-        headers: {
-          'Authorization': `Bearer ${MOLTBOT_TOKEN}`,
-        },
+  // Check for static data file first
+  const staticPath = path.join(process.cwd(), 'public/data/workspace.json');
+  
+  if (fs.existsSync(staticPath)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(staticPath, 'utf-8'));
+      return NextResponse.json({ 
+        sessions: data.sessions || [],
+        count: (data.sessions || []).length,
+        generatedAt: data.generatedAt,
+        source: 'static'
       });
-      
-      if (res.ok) {
-        const data = await res.json();
-        return NextResponse.json(data);
-      }
+    } catch (e) {
+      console.error('Error reading static data:', e);
     }
-
-    // Fallback: return mock data or empty
-    return NextResponse.json({
-      count: 0,
-      sessions: [],
-      note: 'Configure MOLTBOT_TOKEN to see live sessions',
-    });
-  } catch (error) {
-    return NextResponse.json({ 
-      error: String(error),
-      note: 'Could not connect to Moltbot API',
-    }, { status: 500 });
   }
+
+  // Fall back to live Moltbot API (local development)
+  const MOLTBOT_URL = process.env.MOLTBOT_URL || 'http://localhost:18789';
+  
+  try {
+    const res = await fetch(`${MOLTBOT_URL}/api/sessions?limit=50&messageLimit=0`, {
+      cache: 'no-store',
+    });
+    
+    if (res.ok) {
+      const data = await res.json();
+      return NextResponse.json({ ...data, source: 'live' });
+    }
+  } catch (error) {
+    console.log('Could not connect to Moltbot API:', error);
+  }
+
+  return NextResponse.json({
+    count: 0,
+    sessions: [],
+    source: 'fallback',
+    note: 'No data available',
+  });
 }

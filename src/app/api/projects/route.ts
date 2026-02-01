@@ -13,12 +13,30 @@ interface Project {
   size: number;
 }
 
-const WORKSPACE = process.env.WORKSPACE_PATH || '/Users/nodefynode04/clawd';
-
-const CONFIG_FILES = ['AGENTS.md', 'SOUL.md', 'USER.md', 'MEMORY.md', 'TOOLS.md', 'HEARTBEAT.md', 'IDENTITY.md'];
-const SKIP_DIRS = ['.git', 'node_modules', '.next', 'security', 'secrets', 'backups'];
-
+// Try static data first (for Vercel), then live data (for local)
 export async function GET() {
+  // Check for static data file first
+  const staticPath = path.join(process.cwd(), 'public/data/workspace.json');
+  
+  if (fs.existsSync(staticPath)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(staticPath, 'utf-8'));
+      return NextResponse.json({ 
+        projects: data.projects, 
+        workspace: data.workspace,
+        generatedAt: data.generatedAt,
+        source: 'static'
+      });
+    } catch (e) {
+      console.error('Error reading static data:', e);
+    }
+  }
+
+  // Fall back to live filesystem scan (local development)
+  const WORKSPACE = process.env.WORKSPACE_PATH || '/Users/nodefynode04/clawd';
+  const CONFIG_FILES = ['AGENTS.md', 'SOUL.md', 'USER.md', 'MEMORY.md', 'TOOLS.md', 'HEARTBEAT.md', 'IDENTITY.md'];
+  const SKIP_DIRS = ['.git', 'node_modules', '.next', 'security', 'secrets', 'backups'];
+
   try {
     const items = fs.readdirSync(WORKSPACE, { withFileTypes: true });
     const projects: Project[] = [];
@@ -31,7 +49,6 @@ export async function GET() {
       const stats = fs.statSync(fullPath);
 
       if (item.isDirectory()) {
-        // Check if it has a README or package.json
         const hasReadme = fs.existsSync(path.join(fullPath, 'README.md')) || 
                           fs.existsSync(path.join(fullPath, 'PLAN.md'));
         const hasPackage = fs.existsSync(path.join(fullPath, 'package.json'));
@@ -56,12 +73,11 @@ export async function GET() {
       }
     }
 
-    // Sort by last modified
     projects.sort((a, b) => new Date(b.lastModified).getTime() - new Date(a.lastModified).getTime());
 
-    return NextResponse.json({ projects, workspace: WORKSPACE });
+    return NextResponse.json({ projects, workspace: WORKSPACE, source: 'live' });
   } catch (error) {
-    return NextResponse.json({ error: String(error) }, { status: 500 });
+    return NextResponse.json({ error: String(error), projects: [] }, { status: 500 });
   }
 }
 

@@ -1,0 +1,375 @@
+{
+  "projects": [
+    {
+      "name": "nodefy-dashboard",
+      "path": "/Users/nodefynode04/clawd/nodefy-dashboard",
+      "type": "project",
+      "hasReadme": true,
+      "lastModified": "2026-02-01T16:18:42.826Z",
+      "size": 6026596
+    },
+    {
+      "name": "agents",
+      "path": "/Users/nodefynode04/clawd/agents",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-02-01T13:23:23.748Z",
+      "size": 17582
+    },
+    {
+      "name": "whoop-dashboard",
+      "path": "/Users/nodefynode04/clawd/whoop-dashboard",
+      "type": "project",
+      "hasReadme": true,
+      "lastModified": "2026-02-01T13:09:52.894Z",
+      "size": 2200906
+    },
+    {
+      "name": "sfi-greenmarkets",
+      "path": "/Users/nodefynode04/clawd/sfi-greenmarkets",
+      "type": "project",
+      "hasReadme": true,
+      "lastModified": "2026-02-01T11:06:55.111Z",
+      "size": 79107411
+    },
+    {
+      "name": "blade-master-jobs",
+      "path": "/Users/nodefynode04/clawd/blade-master-jobs",
+      "type": "project",
+      "hasReadme": true,
+      "lastModified": "2026-02-01T09:29:58.813Z",
+      "size": 72723732
+    },
+    {
+      "name": "sol-trader-vercel",
+      "path": "/Users/nodefynode04/clawd/sol-trader-vercel",
+      "type": "project",
+      "hasReadme": true,
+      "lastModified": "2026-02-01T06:51:19.689Z",
+      "size": 112938
+    },
+    {
+      "name": "sol-trader",
+      "path": "/Users/nodefynode04/clawd/sol-trader",
+      "type": "project",
+      "hasReadme": true,
+      "lastModified": "2026-01-31T22:58:14.260Z",
+      "size": 889010
+    },
+    {
+      "name": "nodefy-scanner",
+      "path": "/Users/nodefynode04/clawd/nodefy-scanner",
+      "type": "project",
+      "hasReadme": true,
+      "lastModified": "2026-01-31T22:38:43.207Z",
+      "size": 134530
+    },
+    {
+      "name": "zinc-website",
+      "path": "/Users/nodefynode04/clawd/zinc-website",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-31T10:41:10.628Z",
+      "size": 32892
+    },
+    {
+      "name": "sales",
+      "path": "/Users/nodefynode04/clawd/sales",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-31T03:17:09.793Z",
+      "size": 9057
+    },
+    {
+      "name": "aperghis-website",
+      "path": "/Users/nodefynode04/clawd/aperghis-website",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-31T02:22:46.041Z",
+      "size": 31998
+    },
+    {
+      "name": "tolbar-website",
+      "path": "/Users/nodefynode04/clawd/tolbar-website",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-31T01:31:06.415Z",
+      "size": 29530
+    },
+    {
+      "name": "nda-nathan",
+      "path": "/Users/nodefynode04/clawd/nda-nathan",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-30T08:16:02.829Z",
+      "size": 15005
+    },
+    {
+      "name": "skills",
+      "path": "/Users/nodefynode04/clawd/skills",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-29T23:44:35.468Z",
+      "size": 218130
+    },
+    {
+      "name": "nodefy-scaling",
+      "path": "/Users/nodefynode04/clawd/nodefy-scaling",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-29T23:44:18.573Z",
+      "size": 70655
+    },
+    {
+      "name": "jewber",
+      "path": "/Users/nodefynode04/clawd/jewber",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-29T20:05:21.688Z",
+      "size": 29489
+    },
+    {
+      "name": "spark-advertising",
+      "path": "/Users/nodefynode04/clawd/spark-advertising",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-29T13:33:02.651Z",
+      "size": 23944
+    },
+    {
+      "name": "AGENTS.md",
+      "path": "/Users/nodefynode04/clawd/AGENTS.md",
+      "type": "config",
+      "hasReadme": false,
+      "lastModified": "2026-01-29T12:01:24.501Z",
+      "size": 24234
+    },
+    {
+      "name": "MEMORY.md",
+      "path": "/Users/nodefynode04/clawd/MEMORY.md",
+      "type": "config",
+      "hasReadme": false,
+      "lastModified": "2026-01-29T10:52:08.988Z",
+      "size": 4297
+    },
+    {
+      "name": "memory",
+      "path": "/Users/nodefynode04/clawd/memory",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-29T10:51:58.685Z",
+      "size": 18366
+    },
+    {
+      "name": "capisoft-redesign",
+      "path": "/Users/nodefynode04/clawd/capisoft-redesign",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-29T09:49:50.068Z",
+      "size": 34996
+    },
+    {
+      "name": "screensaver",
+      "path": "/Users/nodefynode04/clawd/screensaver",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-28T23:29:01.431Z",
+      "size": 206062
+    },
+    {
+      "name": "nodefy-2.0",
+      "path": "/Users/nodefynode04/clawd/nodefy-2.0",
+      "type": "project",
+      "hasReadme": true,
+      "lastModified": "2026-01-28T22:59:51.336Z",
+      "size": 8506
+    },
+    {
+      "name": "USER.md",
+      "path": "/Users/nodefynode04/clawd/USER.md",
+      "type": "config",
+      "hasReadme": false,
+      "lastModified": "2026-01-28T22:58:16.547Z",
+      "size": 1557
+    },
+    {
+      "name": "nodefy-sales",
+      "path": "/Users/nodefynode04/clawd/nodefy-sales",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-28T22:40:03.917Z",
+      "size": 32430
+    },
+    {
+      "name": "ajax-kijken",
+      "path": "/Users/nodefynode04/clawd/ajax-kijken",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-28T21:10:08.467Z",
+      "size": 24814
+    },
+    {
+      "name": "docker",
+      "path": "/Users/nodefynode04/clawd/docker",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-28T13:18:39.896Z",
+      "size": 10981
+    },
+    {
+      "name": "TOOLS.md",
+      "path": "/Users/nodefynode04/clawd/TOOLS.md",
+      "type": "config",
+      "hasReadme": false,
+      "lastModified": "2026-01-28T10:14:55.890Z",
+      "size": 1725
+    },
+    {
+      "name": "shopify-images",
+      "path": "/Users/nodefynode04/clawd/shopify-images",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-28T09:43:30.088Z",
+      "size": 568045
+    },
+    {
+      "name": "nodefy-redesign",
+      "path": "/Users/nodefynode04/clawd/nodefy-redesign",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-28T09:39:06.770Z",
+      "size": 94446
+    },
+    {
+      "name": "moltbot-shop",
+      "path": "/Users/nodefynode04/clawd/moltbot-shop",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-28T09:11:14.450Z",
+      "size": 4508061
+    },
+    {
+      "name": "audits",
+      "path": "/Users/nodefynode04/clawd/audits",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-28T06:31:27.584Z",
+      "size": 7344
+    },
+    {
+      "name": "incoming",
+      "path": "/Users/nodefynode04/clawd/incoming",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-27T23:58:47.594Z",
+      "size": 4939
+    },
+    {
+      "name": "remotion-project",
+      "path": "/Users/nodefynode04/clawd/remotion-project",
+      "type": "project",
+      "hasReadme": true,
+      "lastModified": "2026-01-27T23:17:34.483Z",
+      "size": 245657
+    },
+    {
+      "name": "shopify-calculator",
+      "path": "/Users/nodefynode04/clawd/shopify-calculator",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-27T23:08:15.075Z",
+      "size": 32849
+    },
+    {
+      "name": "displine-clone",
+      "path": "/Users/nodefynode04/clawd/displine-clone",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-27T22:10:31.784Z",
+      "size": 414998
+    },
+    {
+      "name": "discofrog-clone",
+      "path": "/Users/nodefynode04/clawd/discofrog-clone",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-27T16:59:31.921Z",
+      "size": 1359806
+    },
+    {
+      "name": "IDENTITY.md",
+      "path": "/Users/nodefynode04/clawd/IDENTITY.md",
+      "type": "config",
+      "hasReadme": false,
+      "lastModified": "2026-01-27T15:25:56.722Z",
+      "size": 368
+    },
+    {
+      "name": "canvas",
+      "path": "/Users/nodefynode04/clawd/canvas",
+      "type": "project",
+      "hasReadme": false,
+      "lastModified": "2026-01-27T15:16:03.735Z",
+      "size": 4495
+    },
+    {
+      "name": "HEARTBEAT.md",
+      "path": "/Users/nodefynode04/clawd/HEARTBEAT.md",
+      "type": "config",
+      "hasReadme": false,
+      "lastModified": "2026-01-27T15:15:44.877Z",
+      "size": 167
+    },
+    {
+      "name": "SOUL.md",
+      "path": "/Users/nodefynode04/clawd/SOUL.md",
+      "type": "config",
+      "hasReadme": false,
+      "lastModified": "2026-01-27T15:15:44.876Z",
+      "size": 1673
+    }
+  ],
+  "sessions": [
+    {
+      "key": "agent:admin-telegram:telegram:dm:7060223474",
+      "kind": "other",
+      "channel": "telegram",
+      "displayName": "R (@rqsadam)",
+      "model": "claude-opus-4-5",
+      "totalTokens": 55401,
+      "updatedAt": 1769962686137,
+      "sessionId": "20e2958f-a902-49e0-8874-7a2a461beabd"
+    },
+    {
+      "key": "agent:admin-telegram:main",
+      "kind": "other",
+      "channel": "telegram",
+      "displayName": "Main Session",
+      "totalTokens": 0,
+      "updatedAt": 1769962686108,
+      "sessionId": "c4927aae-26aa-43cf-b7f4-31f766ed48a1"
+    },
+    {
+      "key": "agent:admin-telegram:cron:morning-briefing",
+      "kind": "other",
+      "channel": "cron",
+      "displayName": "Morning Briefing",
+      "model": "claude-opus-4-5",
+      "totalTokens": 25018,
+      "updatedAt": 1769929200439,
+      "sessionId": "cfe52ad6-0dcc-46bf-8951-9ac52913ea5a"
+    },
+    {
+      "key": "agent:admin-telegram:telegram:dm:8592371515",
+      "kind": "other",
+      "channel": "telegram",
+      "displayName": "K Ram (@nodekoe)",
+      "model": "claude-opus-4-5",
+      "totalTokens": 93001,
+      "updatedAt": 1769688415899,
+      "sessionId": "5c13a55c-a607-4b0a-8cb6-0888c63d054a"
+    }
+  ],
+  "generatedAt": "2026-02-01T16:19:02.983Z",
+  "workspace": "/Users/nodefynode04/clawd"
+}
